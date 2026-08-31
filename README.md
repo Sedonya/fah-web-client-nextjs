@@ -1,21 +1,21 @@
-Folding@home Bastet Web Control
-===============================
+# Next.js template
 
-This is the frontend Web app for the Folding@home v8 client, codenamed Bastet.
-See Also: https://github.com/FoldingAtHome/fah-client-bastet
+This is a Next.js template with shadcn/ui.
 
-# Debian Linux Quick Start
+## Adding components
 
-## Get the code
+To add components to your app, run the following command:
 
-    git clone https://github.com/foldingathome/fah-web-client-bastet
+```bash
+npx shadcn@latest add button
+```
 
-## Start the development web server
+This will place the ui components in the `components` directory.
 
-    cd fah-web-client-bastet
-    npm i
-    npm run dev
+## Using components
 
-## Open the Browser
+To use the components in your app, import them as follows:
 
-With the development server running visit http://localhost:5173/
+```tsx
+import { Button } from "@/components/ui/button";
+```

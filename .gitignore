@@ -1,14 +1,37 @@
-node_modules
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
 .DS_Store
-/dist
-/dist.txt
-/*.tar.bz2
-/*.zip
-*~
-/package-lock.json
-/.sconsign.dblite
-/.sconf_temp
-/config.log
-/.env.local
-/.env.*.local
-/crap
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+/_legacy_vue_reference
